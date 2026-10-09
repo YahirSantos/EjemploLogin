@@ -11,6 +11,9 @@
 ## Requisitos
 Java 21 y Maven compatible
 
+## Ejecución
+Ejecutar "EjemploLoginApplication" y abrir en el navegador "http://localhost:8080/"
+
 ## Funcionamiento
 
 La aplicación permite registrar usuarios e iniciar sesión mediante una interfaz web sencilla. Está desarrollada con Java y Spring Boot, utiliza SQLite para almacenar la información y emplea Argon2id para proteger las contraseñas.
