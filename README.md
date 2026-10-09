@@ -12,7 +12,8 @@
 Java 21 y Maven compatible
 
 ## Ejecución
-Ejecutar "EjemploLoginApplication" y abrir en el navegador "http://localhost:8080/"
+Ejecutar "EjemploLoginApplication". La aplicación debería lanzar una nueva ventana de su navegador con los formularios.
+De lo contrario, ejecutar la misma aplicación y abrir en su navegador "http://localhost:8080/"
 
 ## Funcionamiento
 
