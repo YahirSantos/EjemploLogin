@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Login</title>
+</head>
+<body>
+
+<main>
+    <h1>Ejemplo Login</h1>
+
+    <nav>
+        <button type="button" id="showLogin">
+            Iniciar sesión
+        </button>
+
+        <button type="button" id="showRegister">
+            Crear cuenta
+        </button>
+    </nav>
+
+    <section id="loginSection">
+        <h2>Iniciar sesión</h2>
+
+        <form id="loginForm">
+            <div>
+                <label for="loginUsername">Usuario o correo electrónico:</label>
+                <input
+                        type="text"
+                        id="loginUsername"
+                        name="username"
+                        required
+                >
+            </div>
+
+            <div>
+                <label for="loginPassword">Contraseña:</label>
+                <input
+                        type="password"
+                        id="loginPassword"
+                        name="password"
+                        required
+                >
+                <button
+                        type="button"
+                        class="togglePassword"
+                        data-target="loginPassword"
+                        aria-pressed="false"
+                >
+                    Mostrar contraseña
+                </button>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <p id="loginMessage" role="status" aria-live="polite"></p>
+    </section>
+
+
+    <section id="registerSection" hidden>
+        <h2>Crear cuenta</h2>
+
+        <form id="registerForm">
+            <div>
+                <label for="registerUsername">Nombre de usuario:</label>
+                <input
+                        type="text"
+                        id="registerUsername"
+                        name="username"
+                        maxlength="50"
+                        required
+                >
+            </div>
+
+            <div>
+                <label for="registerEmail">Correo electrónico:</label>
+                <input
+                        type="email"
+                        id="registerEmail"
+                        name="email"
+                        maxlength="254"
+                        required
+                >
+            </div>
+
+            <div>
+                <label for="registerPassword">Contraseña:</label>
+                <input
+                        type="password"
+                        id="registerPassword"
+                        name="password"
+                        required
+                >
+                <button
+                        type="button"
+                        class="togglePassword"
+                        data-target="registerPassword"
+                        aria-pressed="false"
+                >
+                    Mostrar contraseña
+                </button>
+            </div>
+
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <p id="registerMessage" role="status" aria-live="polite"></p>
+    </section>
+</main>
+
+<script src="/js/app.js" defer></script>
+
+</body>
+</html>
